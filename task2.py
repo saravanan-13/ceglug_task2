@@ -1,7 +1,6 @@
 import csv
 
 
-
 fp = open('number.csv')
 a = csv.reader(fp)
 list2 = []
@@ -18,7 +17,6 @@ for i in range (0,len(list)) :
        list3.append(list [i])
 
 
-
 fp = open('fruits.csv')
 a = csv.reader(fp)
 fruit2 = []
@@ -30,7 +28,6 @@ for i in range(0,len(fruit)):
 for i in range (0,len(fruit2)):
     if fruit2[i]=='' :
         fruit2[i] = fruit2[i-10]
-
 
 
 fp = open('rotten.csv')
@@ -51,7 +48,6 @@ for i in range(0,len(rotten2)):
         rotten3.append(i)
 
 
-
 fp = open('price.csv')
 a = csv.reader(fp)
 price2 = []
@@ -68,7 +64,6 @@ for i in range(0,len(price2)):
     # if the id is present ,price is not given and fruit is not rotten then -1.0 value is given to it.
     if price2[i]=='':
         price2[i]='-1.0'
-
 
 
 fp = open("Data.csv","wb")
